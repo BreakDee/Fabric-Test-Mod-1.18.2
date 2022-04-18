@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ilitestmod",
+  "version": "${version}",
+
+  "name": "Ili Test Mod",
+  "description": "This is a test mod (some bugs and glitches can happen)",
+  "authors": [
+    "Ili"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.ili.ilitestmod.IliTestMod"
+    ]
+  },
+  "mixins": [
+    "ilitestmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
